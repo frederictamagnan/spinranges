@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Poker Spins - Decision Tree</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Poker Spins</h1>
+        <div class="header-controls">
+            <div class="mode-selector">
+                <button class="mode-btn active" data-mode="3way">3-Way</button>
+                <button class="mode-btn" data-mode="hu">HU</button>
+            </div>
+            <div class="stack-selector">
+                <button class="stack-btn active" data-depth="25">25bb</button>
+                <button class="stack-btn" data-depth="20">20bb</button>
+                <button class="stack-btn" data-depth="15">15bb</button>
+                <button class="stack-btn" data-depth="10">10bb</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sélecteur dynamique -->
+        <div class="selector" id="selector">
+            <!-- Généré dynamiquement par app.js -->
+        </div>
+
+        <div class="controls">
+            <button class="control-btn" onclick="back()" id="back-btn" disabled>Back</button>
+            <button class="control-btn" onclick="reset()">Reset</button>
+            <span class="spot-info" id="spot-info">BTN to act</span>
+        </div>
+
+        <!-- Matrice -->
+        <div class="matrix-container">
+            <iframe class="matrix-frame" id="matrix-frame" src="spots/25bb/BTN_toact.html"></iframe>
+        </div>
+    </div>
+
+    <!-- 3-way action trees -->
+    <script src="js/action_tree_25bb.js"></script>
+    <script src="js/action_tree_20bb.js"></script>
+    <script src="js/action_tree_15bb.js"></script>
+    <script src="js/action_tree_10bb.js"></script>
+    <!-- HU action trees -->
+    <script src="js/action_tree_hu_25bb.js"></script>
+    <script src="js/action_tree_hu_20bb.js"></script>
+    <script src="js/action_tree_hu_15bb.js"></script>
+    <script src="js/action_tree_hu_10bb.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

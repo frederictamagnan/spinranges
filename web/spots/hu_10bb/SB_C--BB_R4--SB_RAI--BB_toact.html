@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GTO Wizard - BB</title>
+    <style>
+        :root {
+            --color-fold: #3F89A6;
+            --color-call: #2ecc71;
+            --color-raise: #F25260;
+            --color-allin: #6B0F0F;
+            --color-bg: #1a1a2e;
+            --color-bg-light: #2a2a4e;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-bg);
+            color: white;
+            padding: 15px;
+        }
+        .info {
+            margin-bottom: 15px;
+            color: #aaa;
+            font-size: 14px;
+        }
+        table { border-collapse: collapse; }
+        td, th {
+            width: 52px;
+            height: 40px;
+            text-align: center;
+            font-size: 11px;
+            border: 1px solid #333;
+            font-family: monospace;
+        }
+        th {
+            background: var(--color-bg-light);
+            font-weight: 600;
+        }
+        td { color: white; }
+        .legend {
+            margin-top: 15px;
+            display: flex;
+            gap: 8px;
+        }
+        .legend span {
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="info">Position: BB | Pot: 14.000</div>
+    <table>
+        <tr><th></th><th>A</th><th>K</th><th>Q</th><th>J</th><th>T</th><th>9</th><th>8</th><th>7</th><th>6</th><th>5</th><th>4</th><th>3</th><th>2</th></tr>
+        <tr><th>A</th><td style="background:#222;color:#444" title="AA: not in range">AA</td><td style="background:#222;color:#444" title="AKs: not in range">AKs</td><td style="background:#2ecc71" title="AQs: 100%">AQs<br>100</td><td style="background:#2ecc71" title="AJs: 100%">AJs<br>100</td><td style="background:#2ecc71" title="ATs: 100%">ATs<br>100</td><td style="background:#2ecc71" title="A9s: 100%">A9s<br>100</td><td style="background:#2ecc71" title="A8s: 100%">A8s<br>100</td><td style="background:#2ecc71" title="A7s: 100%">A7s<br>100</td><td style="background:#2ecc71" title="A6s: 100%">A6s<br>100</td><td style="background:#2ecc71" title="A5s: 100%">A5s<br>100</td><td style="background:#2ecc71" title="A4s: 100%">A4s<br>100</td><td style="background:#2ecc71" title="A3s: 100%">A3s<br>100</td><td style="background:#222;color:#444" title="A2s: not in range">A2s</td></tr>
+        <tr><th>K</th><td style="background:#2ecc71" title="AKo: 100%">AKo<br>100</td><td style="background:#222;color:#444" title="KK: not in range">KK</td><td style="background:#222;color:#444" title="KQs: not in range">KQs</td><td style="background:#222;color:#444" title="KJs: not in range">KJs</td><td style="background:#222;color:#444" title="KTs: not in range">KTs</td><td style="background:#2ecc71" title="K9s: 100%">K9s<br>100</td><td style="background:#222;color:#444" title="K8s: not in range">K8s</td><td style="background:#222;color:#444" title="K7s: not in range">K7s</td><td style="background:#222;color:#444" title="K6s: not in range">K6s</td><td style="background:#222;color:#444" title="K5s: not in range">K5s</td><td style="background:#222;color:#444" title="K4s: not in range">K4s</td><td style="background:#222;color:#444" title="K3s: not in range">K3s</td><td style="background:#222;color:#444" title="K2s: not in range">K2s</td></tr>
+        <tr><th>Q</th><td style="background:#2ecc71" title="AQo: 100%">AQo<br>100</td><td style="background:#2ecc71" title="KQo: 100%">KQo<br>100</td><td style="background:#222;color:#444" title="QQ: not in range">QQ</td><td style="background:#222;color:#444" title="QJs: not in range">QJs</td><td style="background:#222;color:#444" title="QTs: not in range">QTs</td><td style="background:#222;color:#444" title="Q9s: not in range">Q9s</td><td style="background:#222;color:#444" title="Q8s: not in range">Q8s</td><td style="background:#222;color:#444" title="Q7s: not in range">Q7s</td><td style="background:#222;color:#444" title="Q6s: not in range">Q6s</td><td style="background:#222;color:#444" title="Q5s: not in range">Q5s</td><td style="background:#222;color:#444" title="Q4s: not in range">Q4s</td><td style="background:#222;color:#444" title="Q3s: not in range">Q3s</td><td style="background:#222;color:#444" title="Q2s: not in range">Q2s</td></tr>
+        <tr><th>J</th><td style="background:#2ecc71" title="AJo: 100%">AJo<br>100</td><td style="background:#2ecc71" title="KJo: 100%">KJo<br>100</td><td style="background:#2ecc71" title="QJo: 100%">QJo<br>100</td><td style="background:#222;color:#444" title="JJ: not in range">JJ</td><td style="background:#222;color:#444" title="JTs: not in range">JTs</td><td style="background:#222;color:#444" title="J9s: not in range">J9s</td><td style="background:#222;color:#444" title="J8s: not in range">J8s</td><td style="background:#222;color:#444" title="J7s: not in range">J7s</td><td style="background:#222;color:#444" title="J6s: not in range">J6s</td><td style="background:#222;color:#444" title="J5s: not in range">J5s</td><td style="background:#222;color:#444" title="J4s: not in range">J4s</td><td style="background:#222;color:#444" title="J3s: not in range">J3s</td><td style="background:#222;color:#444" title="J2s: not in range">J2s</td></tr>
+        <tr><th>T</th><td style="background:#2ecc71" title="ATo: 100%">ATo<br>100</td><td style="background:#2ecc71" title="KTo: 100%">KTo<br>100</td><td style="background:#2ecc71" title="QTo: 100%">QTo<br>100</td><td style="background:#222;color:#444" title="JTo: not in range">JTo</td><td style="background:#222;color:#444" title="TT: not in range">TT</td><td style="background:#222;color:#444" title="T9s: not in range">T9s</td><td style="background:#222;color:#444" title="T8s: not in range">T8s</td><td style="background:#222;color:#444" title="T7s: not in range">T7s</td><td style="background:#222;color:#444" title="T6s: not in range">T6s</td><td style="background:#222;color:#444" title="T5s: not in range">T5s</td><td style="background:#222;color:#444" title="T4s: not in range">T4s</td><td style="background:#222;color:#444" title="T3s: not in range">T3s</td><td style="background:#222;color:#444" title="T2s: not in range">T2s</td></tr>
+        <tr><th>9</th><td style="background:#2ecc71" title="A9o: 100%">A9o<br>100</td><td style="background:#2ecc71" title="K9o: 100%">K9o<br>100</td><td style="background:#2ecc71" title="Q9o: 100%">Q9o<br>100</td><td style="background:#2ecc71" title="J9o: 100%">J9o<br>100</td><td style="background:#2ecc71" title="T9o: 100%">T9o<br>100</td><td style="background:#222;color:#444" title="99: not in range">99</td><td style="background:#222;color:#444" title="98s: not in range">98s</td><td style="background:#2ecc71" title="97s: 100%">97s<br>100</td><td style="background:#222;color:#444" title="96s: not in range">96s</td><td style="background:#222;color:#444" title="95s: not in range">95s</td><td style="background:#222;color:#444" title="94s: not in range">94s</td><td style="background:#222;color:#444" title="93s: not in range">93s</td><td style="background:#222;color:#444" title="92s: not in range">92s</td></tr>
+        <tr><th>8</th><td style="background:#222;color:#444" title="A8o: not in range">A8o</td><td style="background:#222;color:#444" title="K8o: not in range">K8o</td><td style="background:#222;color:#444" title="Q8o: not in range">Q8o</td><td style="background:#2ecc71" title="J8o: 100%">J8o<br>100</td><td style="background:#2ecc71" title="T8o: 100%">T8o<br>100</td><td style="background:#2ecc71" title="98o: 100%">98o<br>100</td><td style="background:#222;color:#444" title="88: not in range">88</td><td style="background:#2ecc71" title="87s: 100%">87s<br>100</td><td style="background:#2ecc71" title="86s: 100%">86s<br>100</td><td style="background:#222;color:#444" title="85s: not in range">85s</td><td style="background:#222;color:#444" title="84s: not in range">84s</td><td style="background:#222;color:#444" title="83s: not in range">83s</td><td style="background:#222;color:#444" title="82s: not in range">82s</td></tr>
+        <tr><th>7</th><td style="background:#2ecc71" title="A7o: 100%">A7o<br>100</td><td style="background:#2ecc71" title="K7o: 100%">K7o<br>100</td><td style="background:#222;color:#444" title="Q7o: not in range">Q7o</td><td style="background:#222;color:#444" title="J7o: not in range">J7o</td><td style="background:#222;color:#444" title="T7o: not in range">T7o</td><td style="background:#222;color:#444" title="97o: not in range">97o</td><td style="background:#2ecc71" title="87o: 100%">87o<br>100</td><td style="background:#2ecc71" title="77: 100%">77<br>100</td><td style="background:#2ecc71" title="76s: 100%">76s<br>100</td><td style="background:#2ecc71" title="75s: 100%">75s<br>100</td><td style="background:#222;color:#444" title="74s: not in range">74s</td><td style="background:#222;color:#444" title="73s: not in range">73s</td><td style="background:#222;color:#444" title="72s: not in range">72s</td></tr>
+        <tr><th>6</th><td style="background:#222;color:#444" title="A6o: not in range">A6o</td><td style="background:#222;color:#444" title="K6o: not in range">K6o</td><td style="background:#2ecc71" title="Q6o: 100%">Q6o<br>100</td><td style="background:#222;color:#444" title="J6o: not in range">J6o</td><td style="background:#222;color:#444" title="T6o: not in range">T6o</td><td style="background:#222;color:#444" title="96o: not in range">96o</td><td style="background:#222;color:#444" title="86o: not in range">86o</td><td style="background:#2ecc71" title="76o: 100%">76o<br>100</td><td style="background:#2ecc71" title="66: 100%">66<br>100</td><td style="background:#2ecc71" title="65s: 100%">65s<br>100</td><td style="background:#2ecc71" title="64s: 100%">64s<br>100</td><td style="background:#222;color:#444" title="63s: not in range">63s</td><td style="background:#222;color:#444" title="62s: not in range">62s</td></tr>
+        <tr><th>5</th><td style="background:#222;color:#444" title="A5o: not in range">A5o</td><td style="background:#222;color:#444" title="K5o: not in range">K5o</td><td style="background:#222;color:#444" title="Q5o: not in range">Q5o</td><td style="background:#222;color:#444" title="J5o: not in range">J5o</td><td style="background:#222;color:#444" title="T5o: not in range">T5o</td><td style="background:#222;color:#444" title="95o: not in range">95o</td><td style="background:#222;color:#444" title="85o: not in range">85o</td><td style="background:#222;color:#444" title="75o: not in range">75o</td><td style="background:#2ecc71" title="65o: 100%">65o<br>100</td><td style="background:#2ecc71" title="55: 100%">55<br>100</td><td style="background:#2ecc71" title="54s: 100%">54s<br>100</td><td style="background:#222;color:#444" title="53s: not in range">53s</td><td style="background:#222;color:#444" title="52s: not in range">52s</td></tr>
+        <tr><th>4</th><td style="background:#222;color:#444" title="A4o: not in range">A4o</td><td style="background:#222;color:#444" title="K4o: not in range">K4o</td><td style="background:#222;color:#444" title="Q4o: not in range">Q4o</td><td style="background:#222;color:#444" title="J4o: not in range">J4o</td><td style="background:#222;color:#444" title="T4o: not in range">T4o</td><td style="background:#222;color:#444" title="94o: not in range">94o</td><td style="background:#222;color:#444" title="84o: not in range">84o</td><td style="background:#222;color:#444" title="74o: not in range">74o</td><td style="background:#222;color:#444" title="64o: not in range">64o</td><td style="background:#222;color:#444" title="54o: not in range">54o</td><td style="background:#222;color:#444" title="44: not in range">44</td><td style="background:#222;color:#444" title="43s: not in range">43s</td><td style="background:#222;color:#444" title="42s: not in range">42s</td></tr>
+        <tr><th>3</th><td style="background:#222;color:#444" title="A3o: not in range">A3o</td><td style="background:#222;color:#444" title="K3o: not in range">K3o</td><td style="background:#222;color:#444" title="Q3o: not in range">Q3o</td><td style="background:#222;color:#444" title="J3o: not in range">J3o</td><td style="background:#3F89A6" title="T3o: 100%">T3o<br>100</td><td style="background:#3F89A6" title="93o: 100%">93o<br>100</td><td style="background:#3F89A6" title="83o: 100%">83o<br>100</td><td style="background:#222;color:#444" title="73o: not in range">73o</td><td style="background:#222;color:#444" title="63o: not in range">63o</td><td style="background:#222;color:#444" title="53o: not in range">53o</td><td style="background:#222;color:#444" title="43o: not in range">43o</td><td style="background:#222;color:#444" title="33: not in range">33</td><td style="background:#222;color:#444" title="32s: not in range">32s</td></tr>
+        <tr><th>2</th><td style="background:#222;color:#444" title="A2o: not in range">A2o</td><td style="background:#222;color:#444" title="K2o: not in range">K2o</td><td style="background:#222;color:#444" title="Q2o: not in range">Q2o</td><td style="background:#222;color:#444" title="J2o: not in range">J2o</td><td style="background:#3F89A6" title="T2o: 100%">T2o<br>100</td><td style="background:#3F89A6" title="92o: 100%">92o<br>100</td><td style="background:#3F89A6" title="82o: 100%">82o<br>100</td><td style="background:#3F89A6" title="72o: 100%">72o<br>100</td><td style="background:#3F89A6" title="62o: 100%">62o<br>100</td><td style="background:#222;color:#444" title="52o: not in range">52o</td><td style="background:#222;color:#444" title="42o: not in range">42o</td><td style="background:#3F89A6" title="32o: 100%">32o<br>100</td><td style="background:#222;color:#444" title="22: not in range">22</td></tr>
+    </table>
+    <div class="legend">
+        <span style="background:var(--color-call)">CALL</span><span style="background:var(--color-fold)">FOLD</span>
+    </div>
+</body>
+</html>

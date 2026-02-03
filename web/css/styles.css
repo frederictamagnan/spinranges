@@ -1,0 +1,264 @@
+/* === Variables === */
+:root {
+    --color-fold: #3F89A6;
+    --color-call: #2ecc71;
+    --color-check: #2ecc71;
+    --color-raise: #F25260;
+    --color-allin: #6B0F0F;
+    --color-bg: #1a1a2e;
+    --color-bg-light: #2a2a4e;
+    --color-text: #ffffff;
+    --color-text-muted: #888888;
+}
+
+/* === Base === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    color: #eee;
+}
+
+/* === Header === */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-controls {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.mode-selector,
+.stack-selector {
+    display: flex;
+    gap: 4px;
+}
+
+.mode-btn,
+.stack-btn {
+    padding: 8px 16px;
+    background: #333;
+    border: none;
+    border-radius: 4px;
+    color: #888;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.mode-btn:hover,
+.stack-btn:hover {
+    background: #444;
+    color: #ccc;
+}
+
+.stack-btn.active {
+    background: var(--color-raise);
+    color: white;
+}
+
+.mode-btn.active {
+    background: var(--color-call);
+    color: white;
+}
+
+/* === Container === */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* === Selector (style GTO Wizard) === */
+.selector {
+    display: flex;
+    gap: 2px;
+    background: #111;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.position-column {
+    flex: 1;
+    background: var(--color-bg-light);
+    padding: 10px;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.position-column.active {
+    opacity: 1;
+}
+
+.position-column.done {
+    opacity: 0.7;
+}
+
+#btn2-col {
+    flex-direction: column;
+}
+
+.position-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #444;
+}
+
+.pos-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-text);
+}
+
+.pos-stack {
+    font-size: 14px;
+    color: var(--color-text-muted);
+}
+
+.position-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* === Action Buttons === */
+.action-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+    transition: transform 0.1s, filter 0.2s;
+    color: white;
+}
+
+.action-btn:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+.action-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.action-btn.selected {
+    outline: 3px solid white;
+    outline-offset: 2px;
+    opacity: 1 !important;
+    filter: brightness(1.1);
+}
+
+/* Non-selected buttons in done columns */
+.position-column.done .action-btn:not(.selected) {
+    opacity: 0.2;
+}
+
+/* Action colors */
+.action-btn.fold { background: var(--color-fold); }
+.action-btn.call { background: var(--color-call); }
+.action-btn.check { background: var(--color-check); }
+.action-btn.raise { background: var(--color-raise); }
+.action-btn.allin { background: var(--color-allin); }
+
+/* === Controls === */
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.control-btn {
+    padding: 8px 16px;
+    background: #444;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.control-btn:hover:not(:disabled) {
+    background: #555;
+}
+
+.control-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.spot-info {
+    font-size: 14px;
+    color: var(--color-text-muted);
+}
+
+/* === Matrix === */
+.matrix-container {
+    background: var(--color-bg-light);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.matrix-frame {
+    width: 100%;
+    height: 650px;
+    border: none;
+}
+
+/* === Matrix HTML (pour les iframes) === */
+.matrix-table {
+    border-collapse: collapse;
+    font-family: monospace;
+}
+
+.matrix-table td,
+.matrix-table th {
+    width: 50px;
+    height: 38px;
+    text-align: center;
+    font-size: 11px;
+    border: 1px solid #333;
+}
+
+.matrix-table th {
+    background: var(--color-bg-light);
+    font-weight: 600;
+}
+
+.legend {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.legend span {
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+}

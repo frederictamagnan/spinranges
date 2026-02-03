@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GTO Wizard - SB</title>
+    <style>
+        :root {
+            --color-fold: #3F89A6;
+            --color-call: #2ecc71;
+            --color-raise: #F25260;
+            --color-allin: #6B0F0F;
+            --color-bg: #1a1a2e;
+            --color-bg-light: #2a2a4e;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-bg);
+            color: white;
+            padding: 15px;
+        }
+        .info {
+            margin-bottom: 15px;
+            color: #aaa;
+            font-size: 14px;
+        }
+        table { border-collapse: collapse; }
+        td, th {
+            width: 52px;
+            height: 40px;
+            text-align: center;
+            font-size: 11px;
+            border: 1px solid #333;
+            font-family: monospace;
+        }
+        th {
+            background: var(--color-bg-light);
+            font-weight: 600;
+        }
+        td { color: white; }
+        .legend {
+            margin-top: 15px;
+            display: flex;
+            gap: 8px;
+        }
+        .legend span {
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="info">Position: SB | Pot: 22.000</div>
+    <table>
+        <tr><th></th><th>A</th><th>K</th><th>Q</th><th>J</th><th>T</th><th>9</th><th>8</th><th>7</th><th>6</th><th>5</th><th>4</th><th>3</th><th>2</th></tr>
+        <tr><th>A</th><td style="background:#2ecc71" title="AA: 100%">AA<br>100</td><td style="background:#2ecc71" title="AKs: 100%">AKs<br>100</td><td style="background:#2ecc71" title="AQs: 100%">AQs<br>100</td><td style="background:#2ecc71" title="AJs: 100%">AJs<br>100</td><td style="background:#2ecc71" title="ATs: 100%">ATs<br>100</td><td style="background:#2ecc71" title="A9s: 100%">A9s<br>100</td><td style="background:#2ecc71" title="A8s: 100%">A8s<br>100</td><td style="background:#2ecc71" title="A7s: 100%">A7s<br>100</td><td style="background:#2ecc71" title="A6s: 100%">A6s<br>100</td><td style="background:#2ecc71" title="A5s: 100%">A5s<br>100</td><td style="background:#2ecc71" title="A4s: 100%">A4s<br>100</td><td style="background:#222;color:#444" title="A3s: not in range">A3s</td><td style="background:#222;color:#444" title="A2s: not in range">A2s</td></tr>
+        <tr><th>K</th><td style="background:#2ecc71" title="AKo: 100%">AKo<br>100</td><td style="background:#2ecc71" title="KK: 100%">KK<br>100</td><td style="background:#2ecc71" title="KQs: 100%">KQs<br>100</td><td style="background:#2ecc71" title="KJs: 100%">KJs<br>100</td><td style="background:#2ecc71" title="KTs: 100%">KTs<br>100</td><td style="background:#2ecc71" title="K9s: 100%">K9s<br>100</td><td style="background:#3F89A6" title="K8s: 100%">K8s<br>100</td><td style="background:#3F89A6" title="K7s: 100%">K7s<br>100</td><td style="background:#3F89A6" title="K6s: 100%">K6s<br>100</td><td style="background:#3F89A6" title="K5s: 100%">K5s<br>100</td><td style="background:#3F89A6" title="K4s: 100%">K4s<br>100</td><td style="background:#3F89A6" title="K3s: 100%">K3s<br>100</td><td style="background:#3F89A6" title="K2s: 100%">K2s<br>100</td></tr>
+        <tr><th>Q</th><td style="background:#2ecc71" title="AQo: 100%">AQo<br>100</td><td style="background:#2ecc71" title="KQo: 100%">KQo<br>100</td><td style="background:#2ecc71" title="QQ: 100%">QQ<br>100</td><td style="background:#2ecc71" title="QJs: 100%">QJs<br>100</td><td style="background:#2ecc71" title="QTs: 100%">QTs<br>100</td><td style="background:#2ecc71" title="Q9s: 100%">Q9s<br>100</td><td style="background:#3F89A6" title="Q8s: 100%">Q8s<br>100</td><td style="background:#3F89A6" title="Q7s: 100%">Q7s<br>100</td><td style="background:#3F89A6" title="Q6s: 100%">Q6s<br>100</td><td style="background:#3F89A6" title="Q5s: 100%">Q5s<br>100</td><td style="background:#3F89A6" title="Q4s: 100%">Q4s<br>100</td><td style="background:#3F89A6" title="Q3s: 100%">Q3s<br>100</td><td style="background:#3F89A6" title="Q2s: 100%">Q2s<br>100</td></tr>
+        <tr><th>J</th><td style="background:#2ecc71" title="AJo: 100%">AJo<br>100</td><td style="background:linear-gradient(to right,#2ecc71 0% 72%,#3F89A6 72% 100%)" title="KJo: 72%">KJo<br>72</td><td style="background:#3F89A6" title="QJo: 100%">QJo<br>100</td><td style="background:#2ecc71" title="JJ: 100%">JJ<br>100</td><td style="background:#2ecc71" title="JTs: 100%">JTs<br>100</td><td style="background:#2ecc71" title="J9s: 100%">J9s<br>100</td><td style="background:#3F89A6" title="J8s: 100%">J8s<br>100</td><td style="background:#3F89A6" title="J7s: 100%">J7s<br>100</td><td style="background:#3F89A6" title="J6s: 100%">J6s<br>100</td><td style="background:#3F89A6" title="J5s: 100%">J5s<br>100</td><td style="background:#3F89A6" title="J4s: 100%">J4s<br>100</td><td style="background:#3F89A6" title="J3s: 100%">J3s<br>100</td><td style="background:#3F89A6" title="J2s: 100%">J2s<br>100</td></tr>
+        <tr><th>T</th><td style="background:#2ecc71" title="ATo: 100%">ATo<br>100</td><td style="background:#3F89A6" title="KTo: 100%">KTo<br>100</td><td style="background:#3F89A6" title="QTo: 100%">QTo<br>100</td><td style="background:#3F89A6" title="JTo: 100%">JTo<br>100</td><td style="background:#2ecc71" title="TT: 100%">TT<br>100</td><td style="background:#2ecc71" title="T9s: 100%">T9s<br>100</td><td style="background:linear-gradient(to right,#2ecc71 0% 0%,#3F89A6 0% 100%)" title="T8s: 100%">T8s<br>100</td><td style="background:#3F89A6" title="T7s: 100%">T7s<br>100</td><td style="background:#3F89A6" title="T6s: 100%">T6s<br>100</td><td style="background:#3F89A6" title="T5s: 100%">T5s<br>100</td><td style="background:#3F89A6" title="T4s: 100%">T4s<br>100</td><td style="background:#3F89A6" title="T3s: 100%">T3s<br>100</td><td style="background:#3F89A6" title="T2s: 100%">T2s<br>100</td></tr>
+        <tr><th>9</th><td style="background:#2ecc71" title="A9o: 100%">A9o<br>100</td><td style="background:#3F89A6" title="K9o: 100%">K9o<br>100</td><td style="background:#3F89A6" title="Q9o: 100%">Q9o<br>100</td><td style="background:#3F89A6" title="J9o: 100%">J9o<br>100</td><td style="background:#3F89A6" title="T9o: 100%">T9o<br>100</td><td style="background:#2ecc71" title="99: 100%">99<br>100</td><td style="background:#2ecc71" title="98s: 100%">98s<br>100</td><td style="background:#3F89A6" title="97s: 100%">97s<br>100</td><td style="background:#3F89A6" title="96s: 100%">96s<br>100</td><td style="background:#3F89A6" title="95s: 100%">95s<br>100</td><td style="background:#3F89A6" title="94s: 100%">94s<br>100</td><td style="background:#3F89A6" title="93s: 100%">93s<br>100</td><td style="background:#3F89A6" title="92s: 100%">92s<br>100</td></tr>
+        <tr><th>8</th><td style="background:#2ecc71" title="A8o: 100%">A8o<br>100</td><td style="background:#3F89A6" title="K8o: 100%">K8o<br>100</td><td style="background:#3F89A6" title="Q8o: 100%">Q8o<br>100</td><td style="background:#3F89A6" title="J8o: 100%">J8o<br>100</td><td style="background:#3F89A6" title="T8o: 100%">T8o<br>100</td><td style="background:#3F89A6" title="98o: 100%">98o<br>100</td><td style="background:#2ecc71" title="88: 100%">88<br>100</td><td style="background:#3F89A6" title="87s: 100%">87s<br>100</td><td style="background:#3F89A6" title="86s: 100%">86s<br>100</td><td style="background:#3F89A6" title="85s: 100%">85s<br>100</td><td style="background:#3F89A6" title="84s: 100%">84s<br>100</td><td style="background:#3F89A6" title="83s: 100%">83s<br>100</td><td style="background:#3F89A6" title="82s: 100%">82s<br>100</td></tr>
+        <tr><th>7</th><td style="background:#2ecc71" title="A7o: 100%">A7o<br>100</td><td style="background:#3F89A6" title="K7o: 100%">K7o<br>100</td><td style="background:#3F89A6" title="Q7o: 100%">Q7o<br>100</td><td style="background:#3F89A6" title="J7o: 100%">J7o<br>100</td><td style="background:#3F89A6" title="T7o: 100%">T7o<br>100</td><td style="background:#3F89A6" title="97o: 100%">97o<br>100</td><td style="background:#3F89A6" title="87o: 100%">87o<br>100</td><td style="background:#2ecc71" title="77: 100%">77<br>100</td><td style="background:#3F89A6" title="76s: 100%">76s<br>100</td><td style="background:#3F89A6" title="75s: 100%">75s<br>100</td><td style="background:#3F89A6" title="74s: 100%">74s<br>100</td><td style="background:#3F89A6" title="73s: 100%">73s<br>100</td><td style="background:#3F89A6" title="72s: 100%">72s<br>100</td></tr>
+        <tr><th>6</th><td style="background:linear-gradient(to right,#2ecc71 0% 93%,#3F89A6 93% 100%)" title="A6o: 93%">A6o<br>93</td><td style="background:#3F89A6" title="K6o: 100%">K6o<br>100</td><td style="background:#3F89A6" title="Q6o: 100%">Q6o<br>100</td><td style="background:#3F89A6" title="J6o: 100%">J6o<br>100</td><td style="background:#3F89A6" title="T6o: 100%">T6o<br>100</td><td style="background:#3F89A6" title="96o: 100%">96o<br>100</td><td style="background:#3F89A6" title="86o: 100%">86o<br>100</td><td style="background:#3F89A6" title="76o: 100%">76o<br>100</td><td style="background:#2ecc71" title="66: 100%">66<br>100</td><td style="background:#3F89A6" title="65s: 100%">65s<br>100</td><td style="background:#3F89A6" title="64s: 100%">64s<br>100</td><td style="background:#3F89A6" title="63s: 100%">63s<br>100</td><td style="background:#3F89A6" title="62s: 100%">62s<br>100</td></tr>
+        <tr><th>5</th><td style="background:#3F89A6" title="A5o: 100%">A5o<br>100</td><td style="background:#3F89A6" title="K5o: 100%">K5o<br>100</td><td style="background:#3F89A6" title="Q5o: 100%">Q5o<br>100</td><td style="background:#3F89A6" title="J5o: 100%">J5o<br>100</td><td style="background:#3F89A6" title="T5o: 100%">T5o<br>100</td><td style="background:#3F89A6" title="95o: 100%">95o<br>100</td><td style="background:#3F89A6" title="85o: 100%">85o<br>100</td><td style="background:#3F89A6" title="75o: 100%">75o<br>100</td><td style="background:#3F89A6" title="65o: 100%">65o<br>100</td><td style="background:#2ecc71" title="55: 100%">55<br>100</td><td style="background:#3F89A6" title="54s: 100%">54s<br>100</td><td style="background:#3F89A6" title="53s: 100%">53s<br>100</td><td style="background:#3F89A6" title="52s: 100%">52s<br>100</td></tr>
+        <tr><th>4</th><td style="background:#3F89A6" title="A4o: 100%">A4o<br>100</td><td style="background:#3F89A6" title="K4o: 100%">K4o<br>100</td><td style="background:#3F89A6" title="Q4o: 100%">Q4o<br>100</td><td style="background:#3F89A6" title="J4o: 100%">J4o<br>100</td><td style="background:#3F89A6" title="T4o: 100%">T4o<br>100</td><td style="background:#222;color:#444" title="94o: not in range">94o</td><td style="background:#222;color:#444" title="84o: not in range">84o</td><td style="background:#3F89A6" title="74o: 100%">74o<br>100</td><td style="background:#3F89A6" title="64o: 100%">64o<br>100</td><td style="background:#3F89A6" title="54o: 100%">54o<br>100</td><td style="background:#2ecc71" title="44: 100%">44<br>100</td><td style="background:#3F89A6" title="43s: 100%">43s<br>100</td><td style="background:#3F89A6" title="42s: 100%">42s<br>100</td></tr>
+        <tr><th>3</th><td style="background:#3F89A6" title="A3o: 100%">A3o<br>100</td><td style="background:#3F89A6" title="K3o: 100%">K3o<br>100</td><td style="background:#3F89A6" title="Q3o: 100%">Q3o<br>100</td><td style="background:#3F89A6" title="J3o: 100%">J3o<br>100</td><td style="background:#3F89A6" title="T3o: 100%">T3o<br>100</td><td style="background:#222;color:#444" title="93o: not in range">93o</td><td style="background:#222;color:#444" title="83o: not in range">83o</td><td style="background:#222;color:#444" title="73o: not in range">73o</td><td style="background:#222;color:#444" title="63o: not in range">63o</td><td style="background:#3F89A6" title="53o: 100%">53o<br>100</td><td style="background:#3F89A6" title="43o: 100%">43o<br>100</td><td style="background:#2ecc71" title="33: 100%">33<br>100</td><td style="background:#3F89A6" title="32s: 100%">32s<br>100</td></tr>
+        <tr><th>2</th><td style="background:#3F89A6" title="A2o: 100%">A2o<br>100</td><td style="background:#3F89A6" title="K2o: 100%">K2o<br>100</td><td style="background:#222;color:#444" title="Q2o: not in range">Q2o</td><td style="background:#222;color:#444" title="J2o: not in range">J2o</td><td style="background:#222;color:#444" title="T2o: not in range">T2o</td><td style="background:#222;color:#444" title="92o: not in range">92o</td><td style="background:#222;color:#444" title="82o: not in range">82o</td><td style="background:#222;color:#444" title="72o: not in range">72o</td><td style="background:#222;color:#444" title="62o: not in range">62o</td><td style="background:#222;color:#444" title="52o: not in range">52o</td><td style="background:#222;color:#444" title="42o: not in range">42o</td><td style="background:#222;color:#444" title="32o: not in range">32o</td><td style="background:#2ecc71" title="22: 100%">22<br>100</td></tr>
+    </table>
+    <div class="legend">
+        <span style="background:var(--color-call)">CALL</span><span style="background:var(--color-fold)">FOLD</span>
+    </div>
+</body>
+</html>

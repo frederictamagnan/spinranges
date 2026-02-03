@@ -1,0 +1,273 @@
+// Auto-generated action tree for hu_10bb
+const ACTION_TREE_HU_10BB = {
+  "": {
+    "position": "SB",
+    "spot_name": "SB_toact",
+    "actions": [
+      {
+        "code": "F",
+        "type": "FOLD",
+        "label": "FOLD",
+        "is_hand_end": true
+      },
+      {
+        "code": "C",
+        "type": "CALL",
+        "label": "CALL",
+        "is_hand_end": false
+      },
+      {
+        "code": "R2",
+        "type": "RAISE",
+        "label": "RAISE",
+        "is_hand_end": false
+      },
+      {
+        "code": "RAI",
+        "type": "RAISE",
+        "label": "ALLIN",
+        "is_hand_end": false
+      }
+    ]
+  },
+  "C": {
+    "position": "BB",
+    "spot_name": "SB_C--BB_toact",
+    "actions": [
+      {
+        "code": "X",
+        "type": "CHECK",
+        "label": "CHECK",
+        "is_hand_end": false
+      },
+      {
+        "code": "R2.5",
+        "type": "RAISE",
+        "label": "RAISE",
+        "is_hand_end": false
+      },
+      {
+        "code": "R4",
+        "type": "RAISE",
+        "label": "RAISE",
+        "is_hand_end": false
+      },
+      {
+        "code": "RAI",
+        "type": "RAISE",
+        "label": "ALLIN",
+        "is_hand_end": false
+      }
+    ]
+  },
+  "R2": {
+    "position": "BB",
+    "spot_name": "SB_R2--BB_toact",
+    "actions": [
+      {
+        "code": "F",
+        "type": "FOLD",
+        "label": "FOLD",
+        "is_hand_end": true
+      },
+      {
+        "code": "C",
+        "type": "CALL",
+        "label": "CALL",
+        "is_hand_end": false
+      },
+      {
+        "code": "R4",
+        "type": "RAISE",
+        "label": "RAISE",
+        "is_hand_end": false
+      },
+      {
+        "code": "RAI",
+        "type": "RAISE",
+        "label": "ALLIN",
+        "is_hand_end": false
+      }
+    ]
+  },
+  "RAI": {
+    "position": "BB",
+    "spot_name": "SB_RAI--BB_toact",
+    "actions": [
+      {
+        "code": "F",
+        "type": "FOLD",
+        "label": "FOLD",
+        "is_hand_end": true
+      },
+      {
+        "code": "C",
+        "type": "CALL",
+        "label": "CALL",
+        "is_hand_end": true
+      }
+    ]
+  },
+  "C-R2.5": {
+    "position": "SB",
+    "spot_name": "SB_C--BB_R2_5--SB_toact",
+    "actions": [
+      {
+        "code": "F",
+        "type": "FOLD",
+        "label": "FOLD",
+        "is_hand_end": true
+      },
+      {
+        "code": "C",
+        "type": "CALL",
+        "label": "CALL",
+        "is_hand_end": false
+      },
+      {
+        "code": "RAI",
+        "type": "RAISE",
+        "label": "ALLIN",
+        "is_hand_end": false
+      }
+    ]
+  },
+  "C-R4": {
+    "position": "SB",
+    "spot_name": "SB_C--BB_R4--SB_toact",
+    "actions": [
+      {
+        "code": "F",
+        "type": "FOLD",
+        "label": "FOLD",
+        "is_hand_end": true
+      },
+      {
+        "code": "C",
+        "type": "CALL",
+        "label": "CALL",
+        "is_hand_end": false
+      },
+      {
+        "code": "RAI",
+        "type": "RAISE",
+        "label": "ALLIN",
+        "is_hand_end": false
+      }
+    ]
+  },
+  "C-RAI": {
+    "position": "SB",
+    "spot_name": "SB_C--BB_RAI--SB_toact",
+    "actions": [
+      {
+        "code": "F",
+        "type": "FOLD",
+        "label": "FOLD",
+        "is_hand_end": true
+      },
+      {
+        "code": "C",
+        "type": "CALL",
+        "label": "CALL",
+        "is_hand_end": true
+      }
+    ]
+  },
+  "R2-R4": {
+    "position": "SB",
+    "spot_name": "SB_R2--BB_R4--SB_toact",
+    "actions": [
+      {
+        "code": "F",
+        "type": "FOLD",
+        "label": "FOLD",
+        "is_hand_end": true
+      },
+      {
+        "code": "C",
+        "type": "CALL",
+        "label": "CALL",
+        "is_hand_end": false
+      },
+      {
+        "code": "RAI",
+        "type": "RAISE",
+        "label": "ALLIN",
+        "is_hand_end": false
+      }
+    ]
+  },
+  "R2-RAI": {
+    "position": "SB",
+    "spot_name": "SB_R2--BB_RAI--SB_toact",
+    "actions": [
+      {
+        "code": "F",
+        "type": "FOLD",
+        "label": "FOLD",
+        "is_hand_end": true
+      },
+      {
+        "code": "C",
+        "type": "CALL",
+        "label": "CALL",
+        "is_hand_end": true
+      }
+    ]
+  },
+  "C-R2.5-RAI": {
+    "position": "BB",
+    "spot_name": "SB_C--BB_R2_5--SB_RAI--BB_toact",
+    "actions": [
+      {
+        "code": "F",
+        "type": "FOLD",
+        "label": "FOLD",
+        "is_hand_end": true
+      },
+      {
+        "code": "C",
+        "type": "CALL",
+        "label": "CALL",
+        "is_hand_end": true
+      }
+    ]
+  },
+  "C-R4-RAI": {
+    "position": "BB",
+    "spot_name": "SB_C--BB_R4--SB_RAI--BB_toact",
+    "actions": [
+      {
+        "code": "F",
+        "type": "FOLD",
+        "label": "FOLD",
+        "is_hand_end": true
+      },
+      {
+        "code": "C",
+        "type": "CALL",
+        "label": "CALL",
+        "is_hand_end": true
+      }
+    ]
+  },
+  "R2-R4-RAI": {
+    "position": "BB",
+    "spot_name": "SB_R2--BB_R4--SB_RAI--BB_toact",
+    "actions": [
+      {
+        "code": "F",
+        "type": "FOLD",
+        "label": "FOLD",
+        "is_hand_end": true
+      },
+      {
+        "code": "C",
+        "type": "CALL",
+        "label": "CALL",
+        "is_hand_end": true
+      }
+    ]
+  }
+};
